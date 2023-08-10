@@ -1,0 +1,47 @@
+{
+    "name": "rezgui/laravel-mpdf-dz",
+    "description": "Laravel MPdf : Easily generate PDF files with arabic support",
+    "keywords": [
+        "pdf",
+        "mpdf",
+        "laravel-pdf",
+        "invoice",
+        "documents",
+        "pdf-invoice",
+        "pdf-documents",
+        "laravel",
+        "adobe",
+        "php",
+        "arabic",
+        "rezgui"
+    ],
+    "authors": [
+        {
+            "name": "Yacine REZGUI",
+            "email": "yacine.rezgui@gmail.com",
+            "homepage": "https://github.com/rezgui/",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "mpdf/mpdf": "^8.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rezgui\\LaravelMpdfDz\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rezgui\\LaravelMpdfDz\\LaravelMpdfDzServiceProvider"
+            ],
+            "aliases": {
+                "PDF": "Rezgui\\LaravelMpdfDz\\Facades\\LaravelMpdfDz"
+            }
+        }
+    }
+}
